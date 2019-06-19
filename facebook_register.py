@@ -5,7 +5,7 @@ import time
 options = webdriver.ChromeOptions()
 options.add_argument('--ignore-certificate-errors')
 options.add_argument("--test-type")
-location = "E://chromedriver"
+location = "your chromedriver path"
 driver = webdriver.Chrome(location)
 driver.get('https://www.facebook.com/')
 
