@@ -9,7 +9,7 @@ class Instagram:
 		self.password = password
 		self.bot = webdriver.Chrome()
 
-	def login(self):
+	def DoStuff(self):
 		bot = self.bot
 		bot.get('https://www.instagram.com/accounts/login/')
 		time.sleep(2)
@@ -30,5 +30,5 @@ class Instagram:
 		post.send_keys(Keys.RETURN)
 		heart = bot.find_element_by_class_name('dCJp8')
 		heart.click()
-sadman = Instagram('your twitter id','twitter password')
-sadman.login()
+User = Instagram('your twitter id','twitter password')
+User.DoStuff()
